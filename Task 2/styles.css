@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #b0dffa;
+    font-family: 'Nunito Sans', sans-serif;
+}
+i{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #b49469;
+}
+
+nav{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color:#69635f;
+    color: #ece4d9;
+}
+
+.logo{
+    flex: 5;
+    padding-left: 1em;
+    font-weight: 500;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+
+.menu{
+    flex: 5;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+}
+section{
+    min-height: 80vh;
+}
+#home{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 0;
+    margin-top: 70px;
+}
+#image>img{
+    border-radius: 50%;
+}
+#intro{
+    color: #4a4446;
+    font-size: 2em;
+}
+#skills{
+     padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    letter-spacing: 2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+#skillsList{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skillcard{
+    background-color: white;
+    height: 220px;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+.skillname{
+    font-size: 1.4em; 
+    padding: 5px 0;  
+}
+.skillimage{
+    margin: 10px 0;
+}
+.skillimage>img{
+    height: 120px;
+    width: 120px;
+}
+#projects,#contact{
+    margin: 20px 0;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#projectslist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projectcard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #f0eeee;
+    border-radius: 20px;
+    background-color: #584c4c;
+    width: 350px;
+    height: 200px;
+    margin: 10px 0;
+}
+
+.projectname{
+    font-size: 24px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+.projectdesc{
+    min-height: 40%;
+    margin-top: 25px;
+}
+
+footer{
+    background-color:#69635f;
+    text-align: center;
+    height: 40px;
+    font-size: 1.2em;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    #home{
+        flex-direction: column;
+    }
+    #projects,#contact{
+        margin-top: 70px ;
+    }
+    .logo{
+        font-size: large;
+        flex: 3;
+    }
+    #projectslist{
+        justify-content: center;
+    }
+}
